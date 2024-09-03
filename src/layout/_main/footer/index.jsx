@@ -18,31 +18,31 @@ import { MdOutlineCall } from 'react-icons/md';
 
 const SOCIAL_MEDIA_LINK = [
   {
-    linkPath: 'https://www.facebook.com/techgater',
+    linkPath: 'https://www.facebook.com/tienpmath',
     icon: <FaFacebookF size={18} />
   },
   {
-    linkPath: 'https://www.instagram.com/techgater',
+    linkPath: 'https://www.instagram.com/tienpmath',
     icon: <FaInstagram size={18} />
   },
   {
-    linkPath: 'https://www.linkedin.com/company/89683736/admin',
+    linkPath: 'https://www.linkedin.com/#',
     icon: <FaLinkedinIn size={18} />
   }
 ];
 
 const ADDRESS = [
   {
-    name: 'Ohio St. South Gate, CA 90280',
+    name: '01 Phù Đổng Thiên Vương, Đà Lạt',
     icon: <MdOutlineLocationOn />
   },
   {
-    name: 'johndoe@yahoo.com',
+    name: 'tiendev88@gmail.com',
     linkPath: '/',
     icon: <FiMail fontSize={20} />
   },
   {
-    name: '+1 386-688-3295',
+    name: '0944838788 - 0944390988',
     linkPath: '/',
     icon: <MdOutlineCall />
   }
@@ -249,7 +249,7 @@ export default function Footer() {
         </Grid>
         <Divider sx={{ my: 3 }} />
         <Typography variant="body1" color="text.primary" textAlign="center">
-          © 2024 Nextall. All rights reserved
+          © 2024 Đặc Sản Đà Lạt - Lâm Đồng giữ bản quyền website này.
         </Typography>
       </Container>
     </Box>
