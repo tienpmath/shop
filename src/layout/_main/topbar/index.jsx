@@ -43,18 +43,18 @@ export default function UserTopbar() {
         <Stack direction="row" alignItems="center" spacing={1}>
           <Link
             component={NextLink}
-            href={'tel:+13866883295'}
+            href={'tel:0943838788'}
             sx={{ color: 'text.primary', fontSize: 14, display: 'flex', alignItems: 'center', gap: 1 }}
           >
-            <MdOutlinePhone /> +1 386-688-3295
+            <MdOutlinePhone /> 0943838788 - 0944390988
           </Link>
           <Divider orientation="vertical" flexItem />
           <Link
             component={NextLink}
             href={'mailto:johndoe@yahoo.com'}
-            sx={{ color: 'text.primary', fontSize: 14, display: 'flex', alignItems: 'center', gap: 1 }}
+            sx={{ color: 'text.primary', fontSize: 15, display: 'flex', alignItems: 'center', gap: 1 }}
           >
-            <MdOutlineMail /> johndoe@yahoo.com
+            <MdOutlineMail /> tiendev88@gmail.com
           </Link>
         </Stack>
         <Stack direction="row" alignItems="center" spacing={1}>
@@ -68,7 +68,7 @@ export default function UserTopbar() {
                   href={isAuthenticated ? '/create-shop' : '/auth/register?redirect=/create-shop'}
                   sx={{ color: 'text.primary', fontSize: 14 }}
                 >
-                  Become a seller
+                  Đăng ký mở shop bán hàng
                 </Link>
               </>
             )
@@ -80,7 +80,7 @@ export default function UserTopbar() {
                 href={isAuthenticated ? '/create-shop' : '/auth/register?redirect=/create-shop'}
                 sx={{ color: 'text.primary', fontSize: 14 }}
               >
-                Become a seller
+                Đăng ký mở shop bán hàng
               </Link>
             </>
           )}

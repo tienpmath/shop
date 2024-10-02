@@ -320,7 +320,7 @@ const CheckoutMain = () => {
                   type="submit"
                   loading={isLoading || isProcessing || loading}
                 >
-                  Place Order
+                  Đặt hàng
                 </LoadingButton>
               </Collapse>
             </Grid>

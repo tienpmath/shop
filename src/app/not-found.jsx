@@ -17,18 +17,17 @@ export default function NotFound() {
     >
       <NotFoundIllustration />
       <Typography variant="h4" color="text.primary">
-        404, Page not founds
+        404, Trang không tìm thấy
       </Typography>
       <Typography variant="body1" color="initial">
-        Something went wrong. It’s look that your requested could not be found. It’s look like the link is broken or the
-        page is removed.
+        Đã xảy ra lỗi. Có vẻ như yêu cầu của bạn không thể được tìm thấy. Có vẻ như liên kết bị hỏng hoặc trang bị xóa
       </Typography>
       <Box sx={{ display: 'flex', gap: 2 }}>
         <Button variant="contained" color="primary" size="large" onClick={() => router.back()}>
           Go Back
         </Button>
         <Button variant="outlined" color="primary" onClick={() => router.push('/')} size="large">
-          Go To Home
+          Trở Về Trang Chủ
         </Button>
       </Box>
     </Box>

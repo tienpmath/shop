@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import NextLink from 'next/link';
-
+import Image from 'next/image';
 // mui
 import { alpha, useTheme } from '@mui/material/styles';
 import { Typography, Container, Stack, Box, IconButton, Grid, Link, Fab, Divider } from '@mui/material';
@@ -33,7 +33,7 @@ const SOCIAL_MEDIA_LINK = [
 
 const ADDRESS = [
   {
-    name: '01 Phù Đổng Thiên Vương, Đà Lạt',
+    name: 'Tổ Vạn Thành, phường 5, thành phố Đà Lạt',
     icon: <MdOutlineLocationOn />
   },
   {
@@ -42,7 +42,7 @@ const ADDRESS = [
     icon: <FiMail fontSize={20} />
   },
   {
-    name: '0944838788 - 0944390988',
+    name: '0944838788 - 0943838788',
     linkPath: '/',
     icon: <MdOutlineCall />
   }
@@ -50,25 +50,25 @@ const ADDRESS = [
 
 const MAIN_LINKS = [
   {
-    heading: 'Resources',
-    listText1: 'Contact us',
+    heading: 'Sản phẩm',
+    listText1: 'Đặc Sản Đà lạt',
     listLink1: '/contact',
-    listText2: 'Products',
+    listText2: 'Hồng Treo Gió',
     listLink2: '/products',
-    listText3: 'Shops',
-    listLink3: '/shops',
-    listText4: 'Compaigns',
+    listText3: 'Mắc Ca Lâm Hà',
+    listLink3: '/Rau Củ Quả Sấy',
+    listText4: 'Nông sản',
     listLink4: '/compaigns'
   },
   {
-    heading: 'About us',
-    listText1: 'About us',
+    heading: 'Về Chúng tôi',
+    listText1: 'Giới thiệu',
     listLink1: '/about',
-    listText2: 'Privacy policy',
+    listText2: 'Chính sách',
     listLink2: '/privacy-policy',
-    listText3: 'Term and conditions',
+    listText3: 'Điều kiện',
     listLink3: '/terms-and-conditions',
-    listText4: 'Refund return policy',
+    listText4: 'Đổi trả Sản phẩm',
     listLink4: '/refund-return-policy'
   }
 ];
@@ -94,9 +94,27 @@ export default function Footer() {
         <Grid container spacing={4}>
           <Grid item md={3}>
             <Stack spacing={3}>
-              <Logo />
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  w
+                  width={500}
+                  height={500}
+                  style={{ width: '100%', height: 'auto' }}
+                  alt="Đặc sản hồng treo gió Đà Lạt, Mắc Ca Lâm Đồng"
+                />
+              </Link>
               <Typography variant="body1" color="text.secondary">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Farm Đà Lạt cam kết:
+                <br />
+                Cung cấp sản phẩm chất lượng cao, có nguồn gốc xuất xứ rõ ràng.
+                <br />
+                Giá cả ổn định, công khai, minh bạch.
+                <br />
+                Dịch vụ chuyên nghiệp, tận tâm.
+                <br />
+                Giao hàng nhanh chóng, đúng hẹn.
+                <br />
               </Typography>
               <Stack>
                 {ADDRESS.map((item, idx) => (
@@ -224,7 +242,7 @@ export default function Footer() {
           <Grid item md={5}>
             <Stack spacing={3}>
               <Typography variant="h4" color="text.primary">
-                Join a Newsletter
+                Nhận Email thông báo - Khuyến mãi - Giá tốt
               </Typography>
               <NewsLetter />
 

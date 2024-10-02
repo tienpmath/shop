@@ -2,7 +2,8 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { useSelector } from 'react-redux';
-
+import Image from 'next/image';
+import Link from 'next/link';
 // mui
 import { alpha } from '@mui/material/styles';
 import { Toolbar, Skeleton, Stack, AppBar, useMediaQuery, Box, Container } from '@mui/material';
@@ -90,7 +91,16 @@ export default function Navbar() {
         <Container maxWidth="xl">
           <Toolbar disableGutters className="toolbar" sx={{ px: '0px!important' }}>
             <Stack gap={4} direction="row" alignItems={'center'}>
-              <Logo />
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  w
+                  width={500}
+                  height={500}
+                  style={{ width: '100%', height: 'auto' }}
+                  alt="Đặc sản hồng treo gió Đà Lạt, Mắc Ca Lâm Đồng"
+                />
+              </Link>
               <Search />
             </Stack>
 

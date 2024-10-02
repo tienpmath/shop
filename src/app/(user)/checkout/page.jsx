@@ -17,13 +17,13 @@ const HeaderBreadcrumbs = dynamic(() => import('src/components/headerBreadcrumbs
 
 // Meta information
 export const metadata = {
-  title: 'Checkout | Nextall - Secure and Convenient Checkout for Your Shopping',
+  title: 'Giỏ hàng và thanh toán | Đặc sản Đà Lạt ✔️✔️',
   description:
-    'Complete your purchase with confidence on Nextall. Enjoy a secure and convenient checkout process for your shopping needs. Enter your payment and shipping information with ease. Experience seamless transactions and fast delivery. Start your checkout now!',
-  applicationName: 'Nextall',
-  authors: 'Nextall',
+    'Giỏ hàng và thanh toán | Đặc sản Đà Lạt ✔️✔️ ! Cam kết giao đúng hàng, thời gian nhanh chóng, được kiểm tra hàng, review đặc sản Đà Lạt',
+  applicationName: 'Tiến Dev 0944838788',
+  authors: 'Tiên Dev',
   keywords:
-    'checkout, Nextall, secure checkout, convenient checkout, complete purchase, payment information, shipping information, seamless transactions, fast delivery, secure payment, easy checkout, hassle-free checkout, online shopping checkout'
+    'Giỏ hàng và thanh toán | Đặc sản Đà Lạt ✔️✔️ ! Cam kết giao đúng hàng, thời gian nhanh chóng, được kiểm tra hàng, review đặc sản Đà Lạt'
 };
 
 export default function Checkout() {
