@@ -80,53 +80,6 @@ export default function LoginForm() {
   const { errors, touched, setFieldValue, values, handleSubmit, getFieldProps } = formik;
   return (
     <>
-      <Stack
-        mb={3}
-        gap={2}
-        sx={{
-          '& .MuiAlert-action': {
-            alignItems: 'center'
-          }
-        }}
-      >
-        <Alert
-          severity="primary"
-          action={
-            <Button
-              color="inherit"
-              size="small"
-              onClick={() => {
-                setFieldValue('email', 'admin@nextall.com');
-                setFieldValue('password', 'test1234');
-              }}
-            >
-              Copy
-            </Button>
-          }
-        >
-          <AlertTitle>Admin</AlertTitle>
-          <b>Email:</b> admin@test.com | <b>password:</b> test1234
-        </Alert>
-        <Alert
-          severity="secondary"
-          action={
-            <Button
-              color="inherit"
-              size="small"
-              onClick={() => {
-                setFieldValue('email', 'vendor@nextall.com');
-                setFieldValue('password', 'test1234');
-              }}
-            >
-              Copy
-            </Button>
-          }
-        >
-          <AlertTitle>Vendor</AlertTitle>
-          <b>Email:</b> vendor@test.com | <b>password:</b> test1234
-        </Alert>
-      </Stack>
-
       <FormikProvider value={formik}>
         <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
           <Stack spacing={3}>
@@ -187,16 +140,16 @@ export default function LoginForm() {
               label="Remember me"
             />
             <Link component={RouterLink} variant="subtitle2" href="/auth/forget-password">
-              Forgot password
+              Quên password
             </Link>
           </Stack>
           <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={loading}>
-            login
+            Đăng nhập
           </LoadingButton>
           <Typography variant="subtitle2" mt={3} textAlign="center">
             Don{`'`}t you have an account? &nbsp;
             <Link href={`/auth/register${redirect ? '?redirect=' + redirect : ''}`} component={RouterLink}>
-              Register
+              Đăng ký
             </Link>
           </Typography>
         </Form>

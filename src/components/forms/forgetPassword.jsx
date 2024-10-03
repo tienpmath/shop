@@ -84,7 +84,7 @@ export default function ForgetPasswordForm({ ...props }) {
           </Stack>
 
           <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={loading}>
-            Send Email
+            Gửi Email
           </LoadingButton>
         </Stack>
       </Form>

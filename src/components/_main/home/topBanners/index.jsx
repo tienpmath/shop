@@ -65,7 +65,7 @@ export default function Index() {
                     }
                   }}
                 >
-                  Shop the latest from top brands
+                  Đặc Sản Hạt Mắc Ca Di Linh, Lâm Hà Lâm Đồng
                 </Typography>
 
                 <Typography
@@ -74,7 +74,7 @@ export default function Index() {
                   display={{ md: 'block', xs: 'none' }}
                   width={{ xl: 270 }}
                 >
-                  Fully Comforable and Smooth Product
+                  Đặc Sản Đà Lạt - Giao hàng nhanh chóng, chất lượng
                 </Typography>
                 <Box>
                   <Button
@@ -87,7 +87,7 @@ export default function Index() {
                       borderRadius: 6
                     }}
                   >
-                    View Collection
+                    Xem thêm
                   </Button>
                 </Box>
               </Stack>
@@ -138,7 +138,7 @@ export default function Index() {
                     }
                   }}
                 >
-                  Shop the latest from top brands
+                  Đặc Sản Hồng Treo Gió Đà Lạt
                 </Typography>
 
                 <Typography
@@ -147,7 +147,7 @@ export default function Index() {
                   display={{ md: 'block', xs: 'none' }}
                   width={{ xl: 270 }}
                 >
-                  Fully Comforable and Smooth Product
+                  Đặc Sản Đà Lạt - Giao hàng nhanh chóng, chất lượng
                 </Typography>
                 <Box>
                   <Button
@@ -160,7 +160,7 @@ export default function Index() {
                       borderRadius: 6
                     }}
                   >
-                    View Collection
+                    Xem thêm
                   </Button>
                 </Box>
               </Stack>

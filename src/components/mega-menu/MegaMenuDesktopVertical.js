@@ -133,7 +133,7 @@ export default function MegaMenuDesktopVertical({ ...other }) {
           paddingY: (theme) => theme.spacing(3.5)
         }}
       >
-        View All
+        Tất tất cả
       </Button>
     </List>
   );

@@ -267,7 +267,8 @@ export default function Footer() {
         </Grid>
         <Divider sx={{ my: 3 }} />
         <Typography variant="body1" color="text.primary" textAlign="center">
-          © 2024 Đặc Sản Đà Lạt - Lâm Đồng giữ bản quyền website này.
+          © 2024 Đặc Sản Đà Lạt - Lâm Đồng giữ bản quyền website này | Thiết kế website bởi ICT Đà Lạt{' '}
+          <Link href=" https://ictdalat.vn"> https://ictdalat.vn</Link>
         </Typography>
       </Container>
     </Box>

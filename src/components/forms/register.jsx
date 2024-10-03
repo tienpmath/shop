@@ -85,7 +85,7 @@ export default function RegisterForm() {
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
             <Stack gap={0.5} width={1}>
               <Typography variant="overline" color="text.primary" htmlFor="firstName" component={'label'}>
-                First Name
+                Họ
               </Typography>
               <TextField
                 id="firstName"
@@ -105,7 +105,7 @@ export default function RegisterForm() {
             </Stack>
             <Stack gap={0.5} width={1}>
               <Typography variant="overline" color="text.primary" htmlFor="lastName" component={'label'}>
-                Last Name
+                Tên
               </Typography>
               <TextField
                 fullWidth
@@ -127,7 +127,7 @@ export default function RegisterForm() {
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
             <Stack gap={0.5} width={1}>
               <Typography variant="overline" color="text.primary" htmlFor="gender" component={'label'}>
-                Gender
+                Giới tính
               </Typography>
               <TextField
                 id="gender"
@@ -229,27 +229,27 @@ export default function RegisterForm() {
           </Stack>
 
           <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={loading}>
-            Register
+            Đăng ký
           </LoadingButton>
         </Stack>
 
         <Typography variant="subtitle2" mt={3} textAlign="center">
-          Already have an account? &nbsp;
+          Bạn đã có tài khoản, vui lòng đăng nhập
           <Link
             href={`/auth/login${router.query?.redirect ? '?redirect=' + router.query?.redirect : ''}`}
             component={RouterLink}
           >
-            Login
+            Đăng nhập
           </Link>
         </Typography>
         <Typography variant="body2" align="center" color="text.secondary" mt={2}>
-          By registering, I agree to Nextall&nbsp;
+          Khi đăng ký bạn đã đồng ý với điều khoản của chúng tôi
           <Link underline="always" color="text.primary" href="#" fontWeight={700}>
-            Terms
+            Điều kiện
           </Link>
           &nbsp;and&nbsp;
           <Link underline="always" color="text.primary" href="#" fontWeight={700}>
-            Privacy policy
+            Chính sách
           </Link>
           .
         </Typography>
