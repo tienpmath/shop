@@ -17,7 +17,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" htmlFor="firstName" component={'label'}>
-              First Name
+              Full Name
             </Typography>
             <TextField
               fullWidth
@@ -29,7 +29,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
           </Stack>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" htmlFor="lastName" component={'label'}>
-              Last Name
+              Tên bạn
             </Typography>
             <TextField
               fullWidth
@@ -42,7 +42,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
         </Stack>
         <Stack spacing={0.5} width={1}>
           <Typography variant="overline" color="text.primary" htmlFor="address" component={'label'}>
-            Address
+            Địa chỉ số nhà
           </Typography>
           <TextField
             fullWidth
@@ -54,7 +54,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" htmlFor="city" component={'label'}>
-              Town City
+              Tỉnh | Thành phố
             </Typography>
             <TextField
               fullWidth
@@ -65,7 +65,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
           </Stack>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" htmlFor="state" component={'label'}>
-              State
+              Quận | Huyện
             </Typography>
             <TextField
               fullWidth
@@ -76,7 +76,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
           </Stack>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" htmlFor="zip" component={'label'}>
-              Zip/Postal Code
+              Mã vùng
             </Typography>
             <TextField
               fullWidth
@@ -89,7 +89,7 @@ export default function ShipmentCheckoutForm({ getFieldProps, touched, errors })
         </Stack>
         <Stack spacing={0.5} width={1}>
           <Typography variant="overline" color="text.primary" htmlFor="country" component={'label'}>
-            Country
+            Quốc gia
           </Typography>
           <TextField
             select

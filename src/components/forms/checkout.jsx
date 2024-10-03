@@ -10,14 +10,14 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
   return (
     <Card>
       <CardHeader
-        title={<Typography variant="h4">Billing Detail</Typography>}
+        title={<Typography variant="h4">Thông tin Đặt hàng - Giao nhanh</Typography>}
         // sx={{ mb: 1 }}
       />
       <Stack spacing={{ xs: 2, sm: 3 }} p={3} mt={1}>
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" for="firstName" component={'label'}>
-              First Name
+              Họ
             </Typography>
             <TextField
               fullWidth
@@ -29,7 +29,7 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
           </Stack>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" for="lastName" component={'label'}>
-              Last Name
+              Tên bạn
             </Typography>
             <TextField
               fullWidth
@@ -78,7 +78,7 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
         </Stack>
         <Stack spacing={0.5} width={1}>
           <Typography variant="overline" color="text.primary" for="address" component={'label'}>
-            Address
+            Địa chỉ, Số nhà
           </Typography>
           <TextField
             fullWidth
@@ -90,7 +90,7 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" for="city" component={'label'}>
-              Town City
+              Tỉnh | Thành phố
             </Typography>
             <TextField
               fullWidth
@@ -101,7 +101,7 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
           </Stack>
           <Stack spacing={0.5} width={1}>
             <Typography variant="overline" color="text.primary" for="state" component={'label'}>
-              State
+              Quận | Huyện
             </Typography>
             <TextField
               fullWidth
@@ -110,24 +110,22 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
               helperText={touched.state && errors.state}
             />
           </Stack>
-          <Stack spacing={0.5} width={1}>
-            <Typography variant="overline" color="text.primary" for="zip" component={'label'}>
-              Zip/Postal Code
-            </Typography>
-            <TextField
-              fullWidth
-              {...getFieldProps('zip')}
-              error={Boolean(touched.zip && errors.zip)}
-              helperText={touched.zip && errors.zip}
-              type="number"
-            />
-          </Stack>
-        </Stack>
-        <Stack spacing={0.5} width={1}>
-          <Typography variant="overline" color="text.primary" for="country" component={'label'}>
-            Country
-          </Typography>
+
           <TextField
+            {...getFieldProps('zip')}
+            error={Boolean(touched.zip && errors.zip)}
+            helperText={touched.zip && errors.zip}
+            type="hidden"
+          />
+        </Stack>
+
+        <TextField
+          {...getFieldProps('country')}
+          error={Boolean(touched.zip && errors.zip)}
+          helperText={touched.country && errors.country}
+          type="hidden"
+        />
+        {/* <TextField
             select
             fullWidth
             placeholder="Country"
@@ -141,11 +139,11 @@ export default function CheckoutGuestForm({ getFieldProps, touched, errors, hand
                 {option.label}
               </option>
             ))}
-          </TextField>
-        </Stack>
+          </TextField> */}
+
         <Stack spacing={0.5} width={1}>
           <Typography variant="overline" color="text.primary" for="note" component={'label'}>
-            Note
+            Ghi chú
           </Typography>
           <TextField
             fullWidth

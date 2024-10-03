@@ -122,8 +122,7 @@ const CheckoutMain = () => {
     address: Yup.string().required('Address is required'),
     city: Yup.string().required('City is required'),
     state: Yup.string().required('State is required'),
-    country: Yup.string().required('Country is required'),
-    zip: Yup.string().required('Postal is required'),
+
     // shipping: Yup.boolean().required('Postal is required'),
     shippingAddress: checked
       ? Yup.object().shape({
@@ -133,9 +132,7 @@ const CheckoutMain = () => {
           email: Yup.string().email('Enter email Valid').required('Email is required'),
           address: Yup.string().required('Address is required'),
           city: Yup.string().required('City is required'),
-          state: Yup.string().required('State is required'),
-          country: Yup.string().required('Country is required'),
-          zip: Yup.string().required('Postal is required')
+          state: Yup.string().required('State is required')
         })
       : Yup.string().nullable().notRequired()
   });
@@ -150,8 +147,8 @@ const CheckoutMain = () => {
       address: userData?.address || '',
       city: userData?.city || '',
       state: userData?.state || '',
-      country: userData?.country || 'Pakistan',
-      zip: userData?.zip || '',
+      country: 'Việt Nam',
+      zip: 76000,
       note: '',
       ...(checked && {
         shippingAddress: {
@@ -160,8 +157,8 @@ const CheckoutMain = () => {
           address: '',
           city: '',
           state: '',
-          country: 'Pakistan',
-          zip: ''
+          country: 'Việt Nam',
+          zip: '76000'
         }
       })
     },
@@ -201,8 +198,8 @@ const CheckoutMain = () => {
         city: values.city,
         line1: values.address,
         state: values.state,
-        postal_code: values.zip,
-        country: selected?.code.toLocaleLowerCase() || 'us'
+        postal_code: 76000,
+        country: 'Việt Nam'
       }
     };
 
