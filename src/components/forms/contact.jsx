@@ -135,7 +135,7 @@ const ContactUs = () => {
                   fontSize: '16px'
                 }}
               >
-                Send Message
+                Gửi Liên hệ
               </LoadingButton>
             </Form>
           </FormikProvider>

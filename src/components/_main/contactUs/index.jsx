@@ -26,10 +26,10 @@ const index = () => {
         >
           <Stack>
             <Typography variant="h6" fontSize="16px" textTransform="uppercase" color="primary">
-              Best Your Website
+              Farm Đà Lạt - Chuyên các mặt hàng: Hạt mắc ca Lâm Đồng, Mật ong Lâm Đồng, Hồng treo gió Đà Lạt
             </Typography>
             <Typography variant="h1" fontWeight={800} sx={{ marginY: 2 }}>
-              Get in touch <span>Today!</span>
+              Liên hệ <span>Đặc Sản 2024</span>
             </Typography>
             <Typography variant="body1" fontWeight={500} color="text.secondary" sx={{ mb: 3 }}>
               We're here to listen, assist, and answer any questions you may have. Whether you're interested in our
@@ -44,7 +44,7 @@ const index = () => {
                   </IconButton>
                   <Box textAlign="left">
                     <Typography variant="h6" fontSize="18px!important" color="text.primary">
-                      Email Address
+                      Email
                     </Typography>
                     <Link
                       href="mailto:info@commercehope.com"
@@ -54,7 +54,7 @@ const index = () => {
                       color="text.secondary"
                       component={NextLink}
                     >
-                      info@techgater.com
+                      tiendev88@gmail.com
                     </Link>
                   </Box>
                 </Stack>
@@ -66,7 +66,7 @@ const index = () => {
                   </IconButton>
                   <Box textAlign="left">
                     <Typography variant="h6" fontSize="18px!important" color="text.primary">
-                      Phone
+                      Điện thoại
                     </Typography>
                     <Link
                       href="tel:+923035501602"
@@ -76,7 +76,7 @@ const index = () => {
                       color="text.secondary"
                       component={NextLink}
                     >
-                      +92 303 5501602
+                      0944 838 788 - 0944 838 788
                     </Link>
                   </Box>
                 </Stack>

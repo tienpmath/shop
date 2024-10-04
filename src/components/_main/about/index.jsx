@@ -4,32 +4,32 @@ import React from 'react';
 import { Box, Grid, Stack, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 // images
-import AboutImage from '../../../../public/images/about-1.png';
-import AboutImage2 from '../../../../public/images/about-2.png';
+import AboutImage from '../../../../public/images/about 1.jpg';
+import AboutImage2 from '../../../../public/images/about 2.jpg';
 // components
 import WhyUs from '../home/whyUs';
 import Team from './team';
 
 const Data = [
   {
-    name: 'Vendors',
+    name: 'Sản phẩm',
     range: '65k+',
-    description: 'Contrary to popular belief, Lorem is not simply random text.'
+    description: 'Cung cấp sản phẩm chất lượng cao, có nguồn gốc xuất xứ rõ ràng.'
   },
   {
-    name: 'Earnings',
+    name: 'Giá cả',
     range: '$45B+',
-    description: 'Contrary to popular belief, Lorem is not simply random text.'
+    description: 'Giá cả ổn định, công khai, minh bạch.'
   },
   {
-    name: 'Sold',
+    name: 'Dịch vụ',
     range: '25M+',
-    description: 'Contrary to popular belief, Lorem is not simply random text.'
+    description: 'Dịch vụ chuyên nghiệp, tận tâm.'
   },
   {
-    name: 'Products',
+    name: 'Giao hàng',
     range: '70k+',
-    description: 'Contrary to popular belief, Lorem is not simply random text.'
+    description: 'Giao hàng nhanh chóng, đúng hẹn.'
   }
 ];
 
@@ -61,26 +61,38 @@ export default function Index() {
           </Grid>
           <Grid item md={6} xs={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <Typography variant="h6" fontSize="16px" textTransform="uppercase" color="primary">
-              Who We Are?
+              Farm Đà Lạt là Điểm mua sắm nông sản đặc sản hàng đầu Đà Lạt, Lâm Đồng?
             </Typography>
             <Typography variant="h2" fontWeight={800}>
-              Creating a World Where Fashion is a Lifestyle
+              Sản phẩm nông sản đặc sản tươi ngon, chất lượng cao tại Đà Lạt.
             </Typography>
             <Typography variant="body1" fontWeight={400} color="text.secondary" mt={2}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. Lorem Ipsum has survived not only five centuries,
-              but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book.
+              Chúng tôi cam kết với phương châm: <br />
+              Nguồn hàng đa dạng, chất lượng: từ trái cây, rau củ, hoa tươi đến đặc sản địa phương như dâu tây, atiso,
+              măng tây, hồng treo gió, trà atiso, rượu vang, cà phê đặc sản, bánh mứt, quà lưu niệm...
+              <br />
+              Chất lượng, nguồn gốc sản phẩm: Đều đạt tiêu chuẩn cao và chứng nhận VietGAP, OCOP, ATVSTT,...khác biệt
+              hoàn toàn với những sản phẩm bán tràn lan ở chợ hoặc các lò mứt không có nguồn gốc uy tín.
+              <br />
+              Giá cả hợp lý: Mua trực tiếp từ nhà sản xuất, hợp tác xã, đảm bảo giá cả ổn định, cạnh tranh.
+              <br />
+              Không gian mua sắm hiện đại: Thiết kế thoáng đãng, tiện nghi, tạo cảm giác thoải mái cho khách hàng.
+              <br />
+              Dịch vụ chuyên nghiệp: Đội ngũ nhân viên tận tình, chu đáo, sẵn sàng hỗ trợ khách hàng.
+              <br />
+              Giao hàng online nhanh chóng: Đặt hàng dễ dàng qua website hoặc điện thoại, giao hàng tận nơi nhanh chóng.
+              <br />
+              Trải nghiệm ẩm thực độc đáo: Thưởng thức món mì hoành thánh xá xíu chuẩn vị Hoa, làm từ nguyên liệu tươi
+              ngon.
+              <br />
+              Không gian thư giãn: Thưởng thức trà, cà phê, sữa bò nguyên chất trong không gian xanh mát.
+              <br />
             </Typography>
           </Grid>
         </Grid>
         <Box sx={{ marginTop: 5 }}>
           <Typography variant="h3" fontWeight={700} textAlign="center">
-            Our Services
+            Sản phẩm của Chúng tôi phân phối toàn quốc call là có 0943838788
           </Typography>
           <Typography
             variant="body1"
@@ -88,7 +100,7 @@ export default function Index() {
             color="text.secondary"
             sx={{ maxWidth: 350, textAlign: 'center', mx: 'auto' }}
           >
-            Customer service should not be a department. It should be the entire company.
+            Chúng tôi là một thương hiệu có xuất xứ <br /> Từ Đà Lạt và các huyện của tỉnh Lâm Đồng
           </Typography>
         </Box>
       </Box>
@@ -122,9 +134,9 @@ export default function Index() {
           ))}
         </Grid>
       </Box>
-      <Box sx={{ paddingBottom: 10 }}>
+      {/* <Box sx={{ paddingBottom: 10 }}>
         <Typography variant="h3" fontWeight={700} textAlign="center">
-          Our Team
+         Đội ngũ
         </Typography>
         <Typography
           variant="body1"
@@ -141,7 +153,7 @@ export default function Index() {
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </Box> */}
     </>
   );
 }
